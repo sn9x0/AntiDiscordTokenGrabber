@@ -38,6 +38,3 @@ The tool has been compiled as a standalone `.exe`, so you don't need to install 
    - **"Browser Protect" Tab:** *(Currently under construction)* The direct file lock for Chrome/Edge cookies will be implemented here soon.
    - **"Clipboard Protect" Tab:** Check the box for "Enable Anti-Clipboard-Hijacker" so the tool watches out for viruses in the background.
 4. Check the box at the very bottom for **"Enable Auto-Protection on PC Restart"** so you don't have to think about the tool after rebooting your PC.
-
-## ⚠️ Warning
-This tool modifies core files of Discord to lock them away from hackers. When there is an official Discord update, Discord might occasionally fail to update. In this case, simply open the tool, click on **"Unprotect"**, let Discord update normally, and then click on **"Protect"** again.
